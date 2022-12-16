@@ -66,7 +66,7 @@ export default class Track {
 
 	async init() {
 		this.setWindowResizer();
-		//const controls = new OrbitControls(this.camera, this.renderer.domElement);
+		const controls = new OrbitControls(this.camera, this.renderer.domElement);
 		this.createTrack();
 		this.keyAttributes();
 		this.loop();
